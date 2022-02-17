@@ -5,10 +5,9 @@ import javax.persistence.Entity
 import javax.persistence.Id
 
 @Entity
-class Waitlist (
+class WhizWaitlist (
     @Id
     val email: String,
-
-    @Column(nullable=false)
     val name: String,
+    val surname: String,
 )
