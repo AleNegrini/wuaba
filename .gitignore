@@ -1,0 +1,9 @@
+/postgres-data/pg_multixact/members
+/postgres-data/pg_multixact/offsets
+/postgres-data/pg_subtrans
+/postgres-data/base
+/postgres-data/pg_xact
+/postgres-data/global
+/postgres-data/pg_wal
+/postgres-data/pg_stat_tmp
+/postgres-data/*
