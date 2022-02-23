@@ -2,6 +2,7 @@ package io.wuaba.wuabawaitlist.presentation
 
 import io.wuaba.wuabawaitlist.dto.Whiz
 import io.wuaba.wuabawaitlist.service.WhizService
+import org.springframework.web.bind.annotation.CrossOrigin
 import org.springframework.web.bind.annotation.DeleteMapping
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
@@ -29,7 +30,7 @@ class WhizController(
     @DeleteMapping
     fun deleteWhiz(@RequestParam email: String) = whizService.deleteWhiz(email)
 
-
+    @CrossOrigin
     @PostMapping
     @ResponseBody
     fun addWhiz(@RequestParam email: String) = whizService.addNewWhiz(email)

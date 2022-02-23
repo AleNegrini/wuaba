@@ -2,6 +2,7 @@ package io.wuaba.wuabawaitlist.presentation
 
 import io.wuaba.wuabawaitlist.dto.Wonder
 import io.wuaba.wuabawaitlist.service.WonderService
+import org.springframework.web.bind.annotation.CrossOrigin
 import org.springframework.web.bind.annotation.DeleteMapping
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
@@ -28,7 +29,6 @@ class WonderController(
 
     @DeleteMapping
     fun deleteWonder(@RequestParam email: String) = wonderService.deleteWonder(email)
-
 
     @PostMapping
     @ResponseBody
