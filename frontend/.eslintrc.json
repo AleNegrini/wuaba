@@ -1,0 +1,38 @@
+{
+  "root": true,
+  "ignorePatterns": ["src/reportWebVitals.ts", "setupTests.ts"],
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:jest/recommended"
+  ],
+  "plugins": ["prettier", "testing-library"],
+  "overrides": [
+    {
+      "files": ["**/*.ts?(x)"],
+      "extends": [
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:testing-library/react"
+      ],
+      "rules": {
+        "camelcase": "error"
+      }
+    }
+  ],
+  "rules": {
+    "camelcase": "error",
+    "no-console": "error",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "@typescript-eslint/no-unused-vars": ["warn", { "varsIgnorePattern": "^_", "argsIgnorePattern": "^_" }]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
