@@ -1,5 +1,8 @@
-import { AppBar as MUIAppBar, Box, Button, Container, IconButton, Link, Toolbar } from "@mui/material";
+import { AppBar as MUIAppBar, Box, Container, IconButton, Toolbar } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import SignupButton from "../../../components/SignupButton";
+import LoginButton from "../../../components/LoginButton";
+import React from "react";
 
 const AppBar: React.FC = () => {
   return (
@@ -26,21 +29,9 @@ const AppBar: React.FC = () => {
           >
             <MenuIcon fontSize="small" />
           </IconButton>
-          <Box
-            sx={{
-              alignItems: "center",
-              display: {
-                md: "flex",
-                xs: "none",
-              },
-            }}
-          >
-            <Button size="medium" sx={{ ml: 2 }} variant="outlined">
-              Login
-            </Button>
-            <Button size="medium" sx={{ ml: 2 }} variant="contained">
-              Unisciti a Wuaba
-            </Button>
+          <Box>
+            <LoginButton sx={{ ml: 2 }} label="Login" disabled />
+            <SignupButton sx={{ ml: 2 }} label={"Unisciti a Wuaba"} />
           </Box>
         </Toolbar>
       </Container>
