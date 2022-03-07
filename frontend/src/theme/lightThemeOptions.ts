@@ -15,23 +15,22 @@ const neutral = {
 };
 
 const background = {
-  default: "#F9FAFC",
+  default: "#F3F6FF",
   paper: "#FFFFFF",
 };
 
 const divider = "#E6E8F0";
 
 const primary = {
-  main: "#2a215e",
-  light: "#8D86C9",
-  dark: "#242038",
+  main: "#4262FF",
+  light: "#C6D0FF",
+  dark: "#2147fe",
   contrastText: "#FFFFFF",
 };
 
 const secondary = {
-  main: "#ED4487",
+  main: "#F7C1BB",
   light: "#F1A7BB",
-  dark: "#750b35",
   contrastText: "#FFFFFF",
 };
 

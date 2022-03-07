@@ -11,8 +11,8 @@ const LandingPage: React.FC = () => {
   return (
     <>
       <AppBar />
-      <HomeHero />
-      <HomeTestimonial />
+      {/*<HomeHero />*/}
+      {/*<HomeTestimonial />*/}
       <SignupModal open={isSignupModalOpen} handleCloseModal={toggleSignupModalOpen} />
     </>
   );

@@ -156,6 +156,11 @@ export const baseThemeOptions: Partial<ThemeOptions> = {
       defaultProps: {
         underline: "always",
       },
+      styleOverrides: {
+        root: {
+          cursor: "pointer",
+        },
+      },
     },
     MuiListItemIcon: {
       styleOverrides: {

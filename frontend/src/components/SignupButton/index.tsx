@@ -1,4 +1,4 @@
-import { Button, ButtonProps } from "@mui/material";
+import { Button, ButtonProps, Typography } from "@mui/material";
 import { useContext } from "react";
 import { AppContext } from "../ContextProvider";
 
@@ -10,8 +10,10 @@ const SignupButton: React.FC<SignupButtonProps & ButtonProps> = ({ label, ...oth
   const { toggleSignupModalOpen } = useContext(AppContext);
 
   return (
-    <Button size="medium" variant="contained" color="secondary" onClick={toggleSignupModalOpen} {...others}>
-      {label}
+    <Button size="medium" variant="contained" color="primary" onClick={toggleSignupModalOpen} {...others}>
+      <Typography color="neutral.100" variant="body2">
+        {label}
+      </Typography>
     </Button>
   );
 };
