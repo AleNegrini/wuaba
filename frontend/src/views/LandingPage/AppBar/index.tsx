@@ -21,9 +21,6 @@ const AppBar: React.FC = () => {
       elevation={0}
       sx={{
         backgroundColor: "background.default",
-        borderBottomColor: "divider",
-        borderBottomStyle: "solid",
-        borderBottomWidth: 1,
         color: "text.secondary",
       }}
     >

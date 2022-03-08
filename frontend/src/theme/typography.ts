@@ -47,11 +47,13 @@ const typography: TypographyOptions = {
     fontWeight: 700,
     fontSize: "3rem",
     lineHeight: 1.375,
+    fontFamily: "Spoof, Times New Roman",
   },
   h3: {
     fontWeight: 700,
     fontSize: "2.25rem",
     lineHeight: 1.375,
+    fontFamily: "Spoof, Times New Roman",
   },
   h4: {
     fontWeight: 700,

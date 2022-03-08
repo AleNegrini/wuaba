@@ -111,6 +111,8 @@ export const baseThemeOptions: Partial<ThemeOptions> = {
           flexDirection: "column",
           minHeight: "100%",
           width: "100%",
+          margin: "0px",
+          padding: "0px",
         },
         "#__next": {
           display: "flex",

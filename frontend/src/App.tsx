@@ -11,12 +11,7 @@ function App() {
     <div className="App">
       <ThemeProvider theme={theme}>
         <ContextProvider>
-          <header className="App-header">
-            <title>Wuaba | Lorem ipsum</title>
-          </header>
-          <body>
-            <LandingPage />
-          </body>
+          <LandingPage />
         </ContextProvider>
       </ThemeProvider>
     </div>
